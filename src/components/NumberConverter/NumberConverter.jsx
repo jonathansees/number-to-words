@@ -99,7 +99,8 @@ const NumberConverter = (props) => {
     words = [];
     for (i = 0; i < chunksLen; i++) {
       chunk = parseInt(chunks[i]);
-      
+      console.log('___chunk', chunk)
+
       if (chunk) {
   
         /* Split chunk into array of individual integers */
@@ -141,7 +142,11 @@ const NumberConverter = (props) => {
         }
       }
     }
-    
+
+    if(!chunks[1] && chunks[0].length < 3) {
+      words.pop();
+    }
+
     if (negNumber) {
       words.push('Negative');
     }
