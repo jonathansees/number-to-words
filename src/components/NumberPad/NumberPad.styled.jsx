@@ -26,12 +26,10 @@ const StyledHex = styled.div`
   background: var(--background-color);
   width: 45px;
   height: 45px;
-  margin: 0 5px;
+  margin: 0;
   display: inline-block;
   transform: rotate(90deg);
-  // transition: all 150ms ease-in-out;
-  
-  transition: all 10s;
+  transition: all .2s;
 
   &:hover{
     background: var(--hover-background-color);
@@ -89,7 +87,7 @@ const StyledHexContent = styled.div`
 const KeypadWrapper = styled.div`
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 0;
+  gap: 5px;
   
   max-width: 100%;
   overflow: hidden;

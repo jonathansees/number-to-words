@@ -29,7 +29,7 @@ const Item = (props) => {
   return (
     <ThemeProvider theme={{ mode: theme.mode }}>
       <StyledDT variant={theme.variant} onClick={() => setIsActive(!isActive)}>{header}</StyledDT>
-      <Collapse isOpened={!isActive}>
+      <Collapse isOpened={isActive}>
         <StyledDD variant={theme.variant}>{children}</StyledDD>
       </Collapse>
     </ThemeProvider>

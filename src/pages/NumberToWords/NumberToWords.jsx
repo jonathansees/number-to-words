@@ -29,7 +29,7 @@ const colors = [
 const descriptors = ['Dark', 'Light'];
 
 const NumberToWords = () => {
-  const [isOpen, setIsOpen] = useState(true);
+  const [isDrawerOpen, setIsDrawerOpen] = useState(true);
   const [numberValue, setNumberValue] = useState('');
   const [inputType, setInputType] = useState('text');
   const [color, setColor] = useState(colors[0]);
@@ -52,9 +52,9 @@ const NumberToWords = () => {
 
   return (
     <ThemeProvider theme={{ mode: isCustomTheme ? description + color : 'Sonatype' }}>
-      <StyledIcon variant="primary" onClick={() => setIsOpen(!isOpen)} />
-      <Drawer isOpen={isOpen}>
-        <DrawerItem header="Theme">
+      <StyledIcon variant="primary" onClick={() => setIsDrawerOpen(!isDrawerOpen)} />
+      <Drawer isOpen={isDrawerOpen}>
+        <DrawerItem isOpen header="Theme">
           <Switch
             left="Sonatype"
             right="Custom"
@@ -86,7 +86,7 @@ const NumberToWords = () => {
             </Select>
           </Collapse>
         </DrawerItem>
-        <DrawerItem header="Input Type">
+        <DrawerItem header="Input Type" >
           <Radio
             vertical
             value={inputType}
