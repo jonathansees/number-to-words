@@ -104,7 +104,7 @@ const NumberToWords = () => {
             <StyledSlider active={inputType === 'text'}>
               <TextInput
                 onChange={(e) => setNumberValue(e.target.value)}
-                // placeholder="Search..."
+                onKeyPress={(e) => e.key === 'Enter' ? setDigitNumber(e.target.value) : null }
                 value={numberValue}
               />
               <StyledButton onClick={() => setDigitNumber(numberValue)}>Translate</StyledButton>
