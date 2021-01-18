@@ -1,14 +1,10 @@
-import React, { useState } from 'react';
-import Drawer from './components/Drawer';
+import React from 'react';
+import NumberToWords from './pages/NumberToWords'
 
 const App = () => {
-  const [isOpen, setIsOpen] = useState(true);
 
   return (
-    <>
-      <Drawer isOpen={isOpen}>
-      </Drawer>
-    </>
+    <NumberToWords />
   );
 };
 
