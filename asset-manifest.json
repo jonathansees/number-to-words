@@ -1,23 +1,22 @@
 {
   "files": {
-    "main.css": "/number-to-words/static/css/main.8c8b27cf.chunk.css",
-    "main.js": "/number-to-words/static/js/main.6224b79b.chunk.js",
-    "main.js.map": "/number-to-words/static/js/main.6224b79b.chunk.js.map",
-    "runtime-main.js": "/number-to-words/static/js/runtime-main.9aa1e3e5.js",
-    "runtime-main.js.map": "/number-to-words/static/js/runtime-main.9aa1e3e5.js.map",
-    "static/js/2.af9b2ac6.chunk.js": "/number-to-words/static/js/2.af9b2ac6.chunk.js",
-    "static/js/2.af9b2ac6.chunk.js.map": "/number-to-words/static/js/2.af9b2ac6.chunk.js.map",
-    "static/js/3.078061dc.chunk.js": "/number-to-words/static/js/3.078061dc.chunk.js",
-    "static/js/3.078061dc.chunk.js.map": "/number-to-words/static/js/3.078061dc.chunk.js.map",
+    "main.css": "/number-to-words/static/css/main.6dea0f05.chunk.css",
+    "main.js": "/number-to-words/static/js/main.0594146b.chunk.js",
+    "main.js.map": "/number-to-words/static/js/main.0594146b.chunk.js.map",
+    "runtime-main.js": "/number-to-words/static/js/runtime-main.c7ce6feb.js",
+    "runtime-main.js.map": "/number-to-words/static/js/runtime-main.c7ce6feb.js.map",
+    "static/js/2.19349ab2.chunk.js": "/number-to-words/static/js/2.19349ab2.chunk.js",
+    "static/js/2.19349ab2.chunk.js.map": "/number-to-words/static/js/2.19349ab2.chunk.js.map",
+    "static/js/3.3748d6a1.chunk.js": "/number-to-words/static/js/3.3748d6a1.chunk.js",
+    "static/js/3.3748d6a1.chunk.js.map": "/number-to-words/static/js/3.3748d6a1.chunk.js.map",
     "index.html": "/number-to-words/index.html",
-    "static/css/main.8c8b27cf.chunk.css.map": "/number-to-words/static/css/main.8c8b27cf.chunk.css.map",
-    "static/js/2.af9b2ac6.chunk.js.LICENSE.txt": "/number-to-words/static/js/2.af9b2ac6.chunk.js.LICENSE.txt",
-    "static/media/logo.6ce24c58.svg": "/number-to-words/static/media/logo.6ce24c58.svg"
+    "static/css/main.6dea0f05.chunk.css.map": "/number-to-words/static/css/main.6dea0f05.chunk.css.map",
+    "static/js/2.19349ab2.chunk.js.LICENSE.txt": "/number-to-words/static/js/2.19349ab2.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
-    "static/js/runtime-main.9aa1e3e5.js",
-    "static/js/2.af9b2ac6.chunk.js",
-    "static/css/main.8c8b27cf.chunk.css",
-    "static/js/main.6224b79b.chunk.js"
+    "static/js/runtime-main.c7ce6feb.js",
+    "static/js/2.19349ab2.chunk.js",
+    "static/css/main.6dea0f05.chunk.css",
+    "static/js/main.0594146b.chunk.js"
   ]
 }
