@@ -1,19 +1,22 @@
-import React from 'react';
+import React, { useState } from 'react';
 import PropTypes from 'prop-types';
 import { ThemeProvider, withTheme } from 'styled-components';
+import { Collapse } from 'react-collapse';
 import config from '../../config';
 import themes from '../../utils/themes/utils/keys';
-import StyledDrawer from './Drawer.styled';
-import Accordion from '../Accordion';
+import {
+  StyledDT,
+  StyledDD,
+} from './Item.styled';
 
-const Drawer = (props) => {
+const Item = (props) => {
   const {
     isOpen,
+    header,
     mode,
     variant,
     theme: themeProp,
     children,
-    className,
   } = props;
 
   const theme = {
@@ -21,37 +24,35 @@ const Drawer = (props) => {
     variant: variant || themeProp.variant || config.theme.variant,
   };
 
+  const [isActive, setIsActive] = useState(isOpen);
+
   return (
     <ThemeProvider theme={{ mode: theme.mode }}>
-      <StyledDrawer isOpen={isOpen} variant={theme.variant} className={className}>
-        <Accordion>
-          {children}
-        </Accordion>
-      </StyledDrawer>
+      <StyledDT variant={theme.variant} onClick={() => setIsActive(!isActive)}>{header}</StyledDT>
+      <Collapse isOpened={!isActive}>
+        <StyledDD variant={theme.variant}>{children}</StyledDD>
+      </Collapse>
     </ThemeProvider>
   );
 };
 
-Drawer.propTypes = {
+Item.propTypes = {
   isOpen: PropTypes.bool,
+  children: PropTypes.string,
   mode: PropTypes.string,
   variant: PropTypes.string,
   theme: PropTypes.shape({
     mode: PropTypes.oneOf(themes),
     variant: PropTypes.oneOf(['primary', 'passive', 'special', 'destructive']),
-    size: PropTypes.oneOf(['small', 'medium', 'large']),
   }),
-  className: PropTypes.string,
-  children: PropTypes.node,
 };
 
-Drawer.defaultProps = {
+Item.defaultProps = {
   isOpen: false,
+  children: 'Submit',
+  theme: {},
   mode: null,
   variant: null,
-  theme: {},
-  className: '',
-  children: null,
 };
 
-export default withTheme(Drawer);
+export default withTheme(Item);

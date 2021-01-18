@@ -1,14 +1,17 @@
-import styled from 'styled-components';
-import { darken } from 'polished';
+import styled, { css } from 'styled-components';
 import PropTypes from 'prop-types';
+import { Item } from '../Accordion';
+import { primaryColor } from '../../utils/themes';
 
 const StyledDrawer = styled.div`
   --drawer-width: 250px;
+  --border-width: 2px;
+  --background-color: ${primaryColor};
 
   position: fixed;
   width: var(--drawer-width);
   height: 100vh;
-  background-image: linear-gradient(to bottom right, ${darken('0.1', 'rgb(81,172,241)')}, rgb(81,172,241));
+  background-color: var(--background-color);
   margin-left: -250px;
   float: left;
   overflow: auto;
@@ -24,16 +27,20 @@ const StyledDrawer = styled.div`
 
 export const StyledDrawerContent = styled.dl`
   margin-block: auto;
-  border: 1px solid #BBBBBB;
   border-top: none;
 `;
 
+export const DrawerItem = styled(Item)`
+`;
+
 StyledDrawer.propTypes = {
-  isOpen: PropTypes.bool,
+  disabled: PropTypes.bool,
+  vertical: PropTypes.bool,
 };
 
 StyledDrawer.defaultProps = {
-  isOpen: false,
+  disabled: false,
+  vertical: false,
 };
 
 export default StyledDrawer;
