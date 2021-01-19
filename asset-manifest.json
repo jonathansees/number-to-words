@@ -1,22 +1,22 @@
 {
   "files": {
     "main.css": "/number-to-words/static/css/main.6dea0f05.chunk.css",
-    "main.js": "/number-to-words/static/js/main.c0f9ecfe.chunk.js",
-    "main.js.map": "/number-to-words/static/js/main.c0f9ecfe.chunk.js.map",
+    "main.js": "/number-to-words/static/js/main.b30724d7.chunk.js",
+    "main.js.map": "/number-to-words/static/js/main.b30724d7.chunk.js.map",
     "runtime-main.js": "/number-to-words/static/js/runtime-main.c7ce6feb.js",
     "runtime-main.js.map": "/number-to-words/static/js/runtime-main.c7ce6feb.js.map",
-    "static/js/2.19349ab2.chunk.js": "/number-to-words/static/js/2.19349ab2.chunk.js",
-    "static/js/2.19349ab2.chunk.js.map": "/number-to-words/static/js/2.19349ab2.chunk.js.map",
+    "static/js/2.37bc9e13.chunk.js": "/number-to-words/static/js/2.37bc9e13.chunk.js",
+    "static/js/2.37bc9e13.chunk.js.map": "/number-to-words/static/js/2.37bc9e13.chunk.js.map",
     "static/js/3.3748d6a1.chunk.js": "/number-to-words/static/js/3.3748d6a1.chunk.js",
     "static/js/3.3748d6a1.chunk.js.map": "/number-to-words/static/js/3.3748d6a1.chunk.js.map",
     "index.html": "/number-to-words/index.html",
     "static/css/main.6dea0f05.chunk.css.map": "/number-to-words/static/css/main.6dea0f05.chunk.css.map",
-    "static/js/2.19349ab2.chunk.js.LICENSE.txt": "/number-to-words/static/js/2.19349ab2.chunk.js.LICENSE.txt"
+    "static/js/2.37bc9e13.chunk.js.LICENSE.txt": "/number-to-words/static/js/2.37bc9e13.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.c7ce6feb.js",
-    "static/js/2.19349ab2.chunk.js",
+    "static/js/2.37bc9e13.chunk.js",
     "static/css/main.6dea0f05.chunk.css",
-    "static/js/main.c0f9ecfe.chunk.js"
+    "static/js/main.b30724d7.chunk.js"
   ]
 }
