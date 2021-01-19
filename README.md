@@ -1,17 +1,20 @@
 ### Run locally
 
-1. Clone master branch of repo
+Clone master branch of repo
 
-  `git clone https://github.com/jonathansees/number-to-words.git`
+`git clone https://github.com/jonathansees/number-to-words.git`
+
 2. Cd into repository
 
-  `cd number-to-words`
+`cd number-to-words`
+
 3. Install dependencies
 
-  `yarn`
+`yarn`
+
 4. Run project
 
-  `yarn start`
+`yarn start`
 
 ### Run tests
 
