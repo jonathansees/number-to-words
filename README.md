@@ -1,27 +1,26 @@
-### `Run locally`
+### Run locally
 
-# Clone master branch of repo
-git clone https://github.com/jonathansees/number-to-words.git
-# Cd into repository
-cd number-to-words
-# `Install dependencies`
-yarn
-# `Run project`
-yarn start
+1. Clone master branch of repo
+  `git clone https://github.com/jonathansees/number-to-words.git`
+2. Cd into repository
+  `cd number-to-words`
+3. Install dependencies
+  `yarn`
+4. Run project
+  `yarn start`
+   1. Item 3a
+   1. Item 3b
 
+### Run tests
 
-### `Run tests`
+`yarn test`
 
-yarn test
+### Deploy
 
+Switch to gh-pages branch and run
 
-### `Deploy`
+`yarn deploy`
 
-# Switch to gh-pages branch and run
+### Create a build
 
-yarn deploy
-
-
-### `Create a build`
-
-yarn build
+`yarn build`
