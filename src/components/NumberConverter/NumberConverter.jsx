@@ -99,7 +99,6 @@ const NumberConverter = (props) => {
     words = [];
     for (i = 0; i < chunksLen; i++) {
       chunk = parseInt(chunks[i]);
-      console.log('___chunk', chunk)
 
       if (chunk) {
   

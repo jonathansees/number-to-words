@@ -7,7 +7,6 @@ import {
   padding,
   sidePadding,
   minHeight,
-  minWidth,
   fontSize,
   fontHeight,
   focusBorderColor,

@@ -2,10 +2,8 @@ import styled, { css } from 'styled-components';
 import PropTypes from 'prop-types';
 import { ChevronDown } from '../Icons';
 import {
-  textColor,
   secondaryTextColor,
   backgroundColor,
-  borderColor,
   focusBorderColor,
   padding,
   leftSidePadding,

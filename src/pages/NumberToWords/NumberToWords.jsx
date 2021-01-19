@@ -103,6 +103,7 @@ const NumberToWords = () => {
           <StyledSliderWrapper>
             <StyledSlider active={inputType === 'text'}>
               <TextInput
+                placeholder="Enter a number"
                 onChange={(e) => setNumberValue(e.target.value)}
                 onKeyPress={(e) => e.key === 'Enter' ? setDigitNumber(e.target.value) : null }
                 value={numberValue}

@@ -1,5 +1,4 @@
 import theme from 'styled-theming';
-import { math } from 'polished';
 import themes, { mapTheme } from '../../utils/themes/index';
 
 export const focusColor = theme.variants('mode', 'variant', {
@@ -71,24 +70,6 @@ export const minHeight = theme.variants('mode', 'size', {
   medium: mapTheme(themes, 'spatialUnits', 'array', '9'),
   large: mapTheme(themes, 'spatialUnits', 'array', '12'),
 });
-
-// export const minWidth = theme.variants('mode', 'size', {
-//   small: {
-//     main: math(`20 * ${themes.main.spatialUnits[1]}`),
-//     light: math(`20 * ${themes.main.spatialUnits[1]}`),
-//     dark: math(`20 * ${themes.main.spatialUnits[1]}`),
-//   },
-//   medium: {
-//     main: math(`25 * ${themes.main.spatialUnits[1]}`),
-//     light: math(`25 * ${themes.main.spatialUnits[1]}`),
-//     dark: math(`25 * ${themes.main.spatialUnits[1]}`),
-//   },
-//   large: {
-//     main: math(`30 * ${themes.main.spatialUnits[1]}`),
-//     light: math(`30 * ${themes.main.spatialUnits[1]}`),
-//     dark: math(`30 * ${themes.main.spatialUnits[1]}`),
-//   },
-// });
 
 export const fontSize = theme.variants('mode', 'size', {
   small: mapTheme(themes, 'typography.size_1.size'),

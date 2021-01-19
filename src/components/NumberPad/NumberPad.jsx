@@ -19,15 +19,6 @@ const NumberPad = (props) => {
     onClick,
   } = props;
 
-  const handleClick = (key) => {
-    onClick({
-      target: {
-        ...props,
-        value: key,
-      },
-    });
-  };
-
   const theme = {
     variant: variant || themeProp.variant || config.theme.variant,
     size: size || themeProp.size || config.theme.size,
@@ -40,7 +31,17 @@ const NumberPad = (props) => {
       <StyledNumber size="large" variant={theme.variant}>{value}</StyledNumber>
       <KeypadWrapper>
         {keys.map((key) => (
-          <StyledHex className={className} variant={theme.variant} onClick={() => handleClick(key)}>
+          <StyledHex 
+            key={key}
+            className={className} 
+            variant={theme.variant} 
+            onClick={() => onClick({
+              target: {
+                ...props,
+                value: key,
+              },
+            })}
+          >
             <StyledHexContent>
               {key}
             </StyledHexContent>
