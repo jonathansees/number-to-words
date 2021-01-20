@@ -79,7 +79,7 @@ const NumberConverter = (props) => {
     tens = ['', '', 'twenty', 'thirty', 'forty', 'fifty', 'sixty', 'seventy', 'eighty', 'ninety'];
   
     /* Array of scales as words */
-    scales = ['', 'thousand', 'million', 'billion', 'trillion', 'quadrillion', 'quintillion', 'sextillion', 'septillion', 'octillion', 'nonillion', 'decillion', 'undecillion', 'duodecillion', 'tredecillion', 'quatttuor-decillion', 'quindecillion', 'sexdecillion', 'septen-decillion', 'octodecillion', 'novemdecillion', 'vigintillion', 'centillion'];
+    scales = ['', 'thousand', 'million', 'billion', 'trillion', 'quadrillion'];
   
     /* Split user arguemnt into 3 digit chunks from right to left */
     start = string.length;
